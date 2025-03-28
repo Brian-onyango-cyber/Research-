@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Notes Portal - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <!-- Home Header -->
+  <header>
+    <h1>Welcome to Student Notes Portal</h1>
+    <p>Your one-stop platform for downloading notes and doing research.</p>
+  </header>
+  
+  <!-- Featured Notes Section -->
+  <section id="featured">
+    <h2>Featured Notes</h2>
+    <div class="note">
+      <h3>Introduction to Biology</h3>
+      <p>Click to download the PDF.</p>
+      <a href="notes/biology.pdf" download>Download</a>
+    </div>
+    <!-- Add additional featured notes as needed -->
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Notes Portal. All rights reserved.</p>
+  </footer>
+  
+  <!-- Login Modal (Hidden by default) -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login / Sign Up</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes & Study Materials</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>Notes & Study Materials</h1>
+    <input type="text" id="searchNotes" placeholder="Search notes...">
+  </header>
+  
+  <!-- List of Notes -->
+  <section id="notesList">
+    <div class="note-item" data-subject="Math">
+      <h3>Calculus Notes</h3>
+      <p>Subject: Math</p>
+      <a href="notes/calculus.pdf" download>Download PDF</a>
+    </div>
+    <div class="note-item" data-subject="History">
+      <h3>World History</h3>
+      <p>Subject: History</p>
+      <a href="notes/history.pdf" download>Download PDF</a>
+    </div>
+    <!-- More note items as needed -->
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>Research Section</h1>
+    <p>Use our embedded search and useful links to aid your research.</p>
+  </header>
+  
+  <!-- Embedded Google Search -->
+  <section id="embeddedSearch">
+    <h2>Google Search</h2>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" name="q" placeholder="Search Google...">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  
+  <!-- List of Useful Academic Websites -->
+  <section id="usefulLinks">
+    <h2>Useful Academic Websites</h2>
+    <ul>
+      <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+      <li><a href="https://www.jstor.org" target="_blank">JSTOR</a></li>
+      <li><a href="https://www.researchgate.net" target="_blank">ResearchGate</a></li>
+    </ul>
+  </section>
+  
+  <!-- Notes-Taking Area -->
+  <section id="notesTaking">
+    <h2>Notes-Taking</h2>
+    <textarea id="researchNotes" placeholder="Take your research notes here..."></textarea>
+  </section>
+  
+  <!-- ChatGPT Integration (Link to ChatGPT) -->
+  <section id="chatIntegration">
+    <h2>Ask ChatGPT</h2>
+    <p>Click the button below to ask questions using ChatGPT:</p>
+    <a href="https://chat.openai.com" target="_blank" class="btn">Chat with GPT</a>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q&amp;A</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>Q&amp;A Section</h1>
+  </header>
+  
+  <!-- FAQ Section -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I download notes?</h3>
+      <p>Simply click on the download link provided with each note.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I create an account?</h3>
+      <p>Click on the login button in the navigation bar and follow the instructions.</p>
+    </div>
+    <!-- Additional FAQs as needed -->
+  </section>
+  
+  <!-- Forum Section (Simple Q&A submission) -->
+  <section id="forum">
+    <h2>Forum</h2>
+    <div id="questionsList">
+      <!-- Dynamic questions will be added here -->
+    </div>
+    <form id="questionForm">
+      <input type="text" id="questionInput" placeholder="Ask your question..." required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookmarks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>Bookmarks & Favorites</h1>
+  </header>
+  
+  <!-- Bookmarks List (loaded from localStorage) -->
+  <section id="bookmarksSection">
+    <ul id="bookmarksList">
+      <!-- Dynamically inserted bookmarks -->
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+  
+  <!-- File Upload Section -->
+  <section id="fileUpload">
+    <h2>Upload New Note</h2>
+    <form id="uploadForm">
+      <label for="noteFile">Choose file:</label>
+      <input type="file" id="noteFile" accept=".pdf,.doc,.docx">
+      <button type="submit">Upload</button>
+    </form>
+    <div id="uploadProgress" class="progress-bar"></div>
+  </section>
+  
+  <!-- Note Management Section -->
+  <section id="manageNotes">
+    <h2>Manage Existing Notes</h2>
+    <ul id="adminNotesList">
+      <li>Sample Note - <button class="deleteNote">Delete</button></li>
+      <!-- More notes with options to delete/rename -->
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>Contact & Feedback</h1>
+  </header>
+  
+  <!-- Contact Form -->
+  <section id="contactFormSection">
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="faq.html">Q&amp;A</a></li>
+      <li><a href="bookmarks.html">Bookmarks</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="loginBtn">Login / Sign Up</button>
+  </nav>
+  
+  <header>
+    <h1>About Student Notes Portal</h1>
+  </header>
+  
+  <!-- About Content -->
+  <section id="aboutSection">
+    <p>This website is designed to help students access, download, and manage their study materials while also providing research tools and a forum for questions.</p>
+    <p>Developed by: Your Team Name</p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Student Notes Portal</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
+<style>
+  /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  padding: 20px;
+  text-align: center;
+  background: #e2e2e2;
+}
+section {
+  padding: 20px;
+}
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Note / item styling */
+.note, .note-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode nav {
+  background: #222;
+}
+body.dark-mode header {
+  background: #1e1e1e;
+}
+
+/* Progress bar for file upload */
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background: #4caf50;
+  margin-top: 10px;
+}
+
+/* Basic button styling */
+button, .btn {
+  padding: 8px 12px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover, .btn:hover {
+  background: #555;
+}
+
+</style>
+<script>
+  /* scripts.js */
+document.addEventListener("DOMContentLoaded", function() {
+  // Dark Mode Toggle
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", function() {
+      document.body.classList.toggle("dark-mode");
+    });
+  }
+  
+  // Login Modal Functionality
+  const loginBtn = document.getElementById("loginBtn");
+  const loginModal = document.getElementById("loginModal");
+  const closeModal = document.querySelector(".close");
+  if (loginBtn && loginModal) {
+    loginBtn.addEventListener("click", function() {
+      loginModal.style.display = "block";
+    });
+  }
+  if (closeModal) {
+    closeModal.addEventListener("click", function() {
+      loginModal.style.display = "none";
+    });
+  }
+  window.addEventListener("click", function(event) {
+    if (event.target === loginModal) {
+      loginModal.style.display = "none";
+    }
+  });
+  
+  // Simulated Login / Sign Up (using localStorage)
+  const loginForm = document.getElementById("loginForm");
+  if (loginForm) {
+    loginForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value;
+      // Store username in localStorage as a simple simulation
+      localStorage.setItem("user", username);
+      alert("Logged in as " + username);
+      loginModal.style.display = "none";
+    });
+  }
+  
+  // Notes Search Functionality (in notes.html)
+  const searchNotes = document.getElementById("searchNotes");
+  if (searchNotes) {
+    searchNotes.addEventListener("keyup", function() {
+      const filter = searchNotes.value.toLowerCase();
+      const notes = document.querySelectorAll(".note-item");
+      notes.forEach(note => {
+        const text = note.textContent.toLowerCase();
+        note.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+  }
+  
+  // File Upload Simulation (in admin.html)
+  const uploadForm = document.getElementById("uploadForm");
+  if (uploadForm) {
+    uploadForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const fileInput = document.getElementById("noteFile");
+      if (fileInput.files.length === 0) {
+        alert("Please select a file.");
+        return;
+      }
+      const progressBar = document.getElementById("uploadProgress");
+      let width = 0;
+      const interval = setInterval(function() {
+        if (width >= 100) {
+          clearInterval(interval);
+          alert("File uploaded successfully!");
+        } else {
+          width++;
+          progressBar.style.width = width + "%";
+        }
+      }, 20);
+    });
+  }
+  
+  // Q&amp;A Forum: Adding a question (in faq.html)
+  const questionForm = document.getElementById("questionForm");
+  if (questionForm) {
+    questionForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const questionInput = document.getElementById("questionInput");
+      const questionsList = document.getElementById("questionsList");
+      const li = document.createElement("li");
+      li.textContent = questionInput.value;
+      questionsList.appendChild(li);
+      questionInput.value = "";
+    });
+  }
+  
+  // Load Bookmarks (in bookmarks.html)
+  const bookmarksList = document.getElementById("bookmarksList");
+  if (bookmarksList) {
+    const bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    bookmarks.forEach(bookmark => {
+      const li = document.createElement("li");
+      li.textContent = bookmark;
+      bookmarksList.appendChild(li);
+    });
+  }
+});
+
+</script>
+</html>
